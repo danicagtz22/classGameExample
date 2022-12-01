@@ -1,0 +1,66 @@
+
+      ___            ___        /  /\         /  /\         /  /\    
+     /  /\          /__/\      /  /::\       /  /::\       /  /::\   
+    /  /:/          \__\:\    /  /:/\:\     /  /:/\:\     /  /:/\:\  
+   /  /:/           /  /::\  /  /:/  \:\   /  /::\ \:\   /  /:/  \:\ 
+  /__/:/  ___    __/  /:/\/ /__/:/ \__\:| /__/:/\:\ \:\ /__/:/ \__\:\
+  |  |:| /  /\  /__/\/:/~~  \  \:\ /  /:/ \  \:\ \:\_\/ \  \:\ /  /:/
+  |  |:|/  /:/  \  \::/      \  \:\  /:/   \  \:\ \:\    \  \:\  /:/ 
+  |__|:|__/:/    \  \:\       \  \:\/:/     \  \:\_\/     \  \:\/:/  
+   \__\::::/      \__\/        \__\::/       \  \:\        \  \::/   
+       ~~~~                        ~~         \__\/         \__\/    
+      ___           ___           ___           ___     
+     /  /\         /  /\         /  /\         /  /\    
+    /  /::\       /  /::\       /  /::|       /  /::\   
+   /  /:/\:\     /  /:/\:\     /  /:|:|      /  /:/\:\  
+  /  /:/  \:\   /  /::\ \:\   /  /:/|:|__   /  /::\ \:\ 
+ /__/:/_\_ \:\ /__/:/\:\_\:\ /__/:/_|::::\ /__/:/\:\ \:\
+ \  \:\__/\_\/ \__\/  \:\/:/ \__\/  /~~/:/ \  \:\ \:\_\/
+  \  \:\ \:\        \__\::/        /  /:/   \  \:\ \:\  
+   \  \:\/:/        /  /:/        /  /:/     \  \:\_\/  
+    \  \::/        /__/:/        /__/:/       \  \:\    
+     \__\/         \__\/         \__\/         \__\/    
+
+
+
+
+Create a classic video game using the tools you've learned throughout the quarter.
+1/ You MUST extend the Asteroids code-base provided to you.
+2/ You can create any video game you want, EXCEPT Asteroids.
+3/ You may code your game in either Java or Kotlin; see README.md of proJava for Kotlin instructions.
+4/ You may use up to (but no more than) 40% found-code, so long as you cite the source in your java source files.
+My code (the game base) is yours, and not considered found-code. Github is a good resource for 2D Java games from which
+to draw inspiration.
+
+This game uses both vector and raster graphics.
+The advantage of vector graphics is that they scale infinitely, and they render extremely fast. If you use
+raster graphics (png's) which are essentially two-dimensional grids of pixels, make sure to reduce
+ the pixel density, otherwise your game will lag when rendering. For
+ raster graphics implementation, see the Falcon or WhiteCloudDebris classes.
+
+Ignore the following advice at your own peril:
+
+1/ For collision detection, do NOT attempt to detect the intersection of two polygons including rectangles. Your sprites
+ should effectively be a shape with equal width and height circumscribed by a circle, as this facilitates collision
+ detection.  If you want to create non-square rectilinear shapes, walls, or other odd shapes, you can build them one
+ brick at a time; see the Brick class.
+
+2/ Start with the Asteroids game and make incremental changes to it. You will avoid a lot of problems taking
+this approach. Your game should not stray too far from Asteroids initially. As you get more familiar with the game and
+its architecture, you can take more risks, but always be prepared to roll back your changes. Git is your best friend
+for experimenting with new features of your game.  Games like 1941, Joust, Galaga, Space Invaders, Missile Command, are
+good inspiration. Take advantage of the existing architecture with its
+free-form deltaX and deltaY; do not try to create a game that requires a grid like Tetris, Break-out, Pong, or Pac-man
+as these are not well suited to this base-code architecture, and would be like putting plastic tricycle wheels on a
+Lamborghini.
+
+3/ If you find your gaming groove, then you can explode beyond the bounds of the existing Game.DIM and create an entire
+world with a mini-map, and new levels, etc. See Sinistar in moregames (git@github.com:agerber/moregames.git) for how to
+create a mini-map. Other big-world 2D games that cycle are Defender, Mario Bros, etc.
+
+The TAs will select the top ten games. The ten finalists will demonstrate their games and present their code and
+architecture, and the class will vote on the best game. The winner will receive a token prize during an
+awards-ceremony on the last day.
+
+
+
